@@ -13,7 +13,7 @@ struct vehiculeApp: App {
         WindowGroup {
             ContentView()
             TiresView()
-            SwiftUIView()
+         //   SwiftUIView()
             //ExtrasView()
         }
     }
