@@ -1,0 +1,991 @@
+diff --git a/vehicule.xcodeproj/project.pbxproj b/vehicule.xcodeproj/project.pbxproj
+index dcd8d42..80bd3a9 100644
+--- a/vehicule.xcodeproj/project.pbxproj
++++ b/vehicule.xcodeproj/project.pbxproj
+@@ -7,15 +7,24 @@
+ 	objects = {
+ 
+ /* Begin PBXBuildFile section */
+-		A236059A2AE66D8A00E6204B /* TiresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23605992AE66D8A00E6204B /* TiresView.swift */; };
+-		A236059E2AE6759B00E6204B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236059D2AE6759B00E6204B /* SwiftUIView.swift */; };
+ 		A2C602502ADD3DF0006DCE67 /* vehiculeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6024F2ADD3DF0006DCE67 /* vehiculeApp.swift */; };
+-		A2C602522ADD3DF0006DCE67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C602512ADD3DF0006DCE67 /* ContentView.swift */; };
+ 		A2C602542ADD3DF1006DCE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C602532ADD3DF1006DCE67 /* Assets.xcassets */; };
+ 		A2C602572ADD3DF1006DCE67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C602562ADD3DF1006DCE67 /* Preview Assets.xcassets */; };
+ 		A2C602612ADD3DF1006DCE67 /* vehiculeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C602602ADD3DF1006DCE67 /* vehiculeTests.swift */; };
+ 		A2C6026B2ADD3DF1006DCE67 /* vehiculeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6026A2ADD3DF1006DCE67 /* vehiculeUITests.swift */; };
+ 		A2C6026D2ADD3DF1006DCE67 /* vehiculeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6026C2ADD3DF1006DCE67 /* vehiculeUITestsLaunchTests.swift */; };
++		C075373B2AF53EDF00F4C19E /* TiresRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C075373A2AF53EDF00F4C19E /* TiresRepository.swift */; };
++		C075373D2AF53F2E00F4C19E /* ExtrasRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C075373C2AF53F2E00F4C19E /* ExtrasRepository.swift */; };
++		C075373F2AF53FDB00F4C19E /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C075373E2AF53FDB00F4C19E /* TypeView.swift */; };
++		C07537412AF5415D00F4C19E /* ChoiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07537402AF5415D00F4C19E /* ChoiceListView.swift */; };
++		C07537432AF54CFD00F4C19E /* TiresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07537422AF54CFD00F4C19E /* TiresView.swift */; };
++		C07537452AF54F9100F4C19E /* ExtrasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07537442AF54F9100F4C19E /* ExtrasView.swift */; };
++		C0D1978A2AF413E300CC09AE /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D197892AF413E300CC09AE /* Type.swift */; };
++		C0D1978C2AF4155B00CC09AE /* Tires.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1978B2AF4155A00CC09AE /* Tires.swift */; };
++		C0D1978E2AF4159F00CC09AE /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1978D2AF4159F00CC09AE /* Extras.swift */; };
++		C0D197902AF4170200CC09AE /* TypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1978F2AF4170200CC09AE /* TypeRepository.swift */; };
++		C0D197962AF43A9A00CC09AE /* helmet.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D197952AF43A9A00CC09AE /* helmet.png */; };
++		C0D1979E2AF44B4D00CC09AE /* PurchaseDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1979D2AF44B4D00CC09AE /* PurchaseDoneView.swift */; };
+ /* End PBXBuildFile section */
+ 
+ /* Begin PBXContainerItemProxy section */
+@@ -36,11 +45,8 @@
+ /* End PBXContainerItemProxy section */
+ 
+ /* Begin PBXFileReference section */
+-		A23605992AE66D8A00E6204B /* TiresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiresView.swift; sourceTree = "<group>"; };
+-		A236059D2AE6759B00E6204B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+ 		A2C6024C2ADD3DF0006DCE67 /* vehicule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vehicule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+ 		A2C6024F2ADD3DF0006DCE67 /* vehiculeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vehiculeApp.swift; sourceTree = "<group>"; };
+-		A2C602512ADD3DF0006DCE67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+ 		A2C602532ADD3DF1006DCE67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+ 		A2C602562ADD3DF1006DCE67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+ 		A2C6025C2ADD3DF1006DCE67 /* vehiculeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vehiculeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+@@ -48,6 +54,18 @@
+ 		A2C602662ADD3DF1006DCE67 /* vehiculeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vehiculeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+ 		A2C6026A2ADD3DF1006DCE67 /* vehiculeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vehiculeUITests.swift; sourceTree = "<group>"; };
+ 		A2C6026C2ADD3DF1006DCE67 /* vehiculeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vehiculeUITestsLaunchTests.swift; sourceTree = "<group>"; };
++		C075373A2AF53EDF00F4C19E /* TiresRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiresRepository.swift; sourceTree = "<group>"; };
++		C075373C2AF53F2E00F4C19E /* ExtrasRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasRepository.swift; sourceTree = "<group>"; };
++		C075373E2AF53FDB00F4C19E /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
++		C07537402AF5415D00F4C19E /* ChoiceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceListView.swift; sourceTree = "<group>"; };
++		C07537422AF54CFD00F4C19E /* TiresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiresView.swift; sourceTree = "<group>"; };
++		C07537442AF54F9100F4C19E /* ExtrasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasView.swift; sourceTree = "<group>"; };
++		C0D197892AF413E300CC09AE /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
++		C0D1978B2AF4155A00CC09AE /* Tires.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tires.swift; sourceTree = "<group>"; };
++		C0D1978D2AF4159F00CC09AE /* Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
++		C0D1978F2AF4170200CC09AE /* TypeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRepository.swift; sourceTree = "<group>"; };
++		C0D197952AF43A9A00CC09AE /* helmet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = helmet.png; path = "../../../Pictures/Photos Library.photoslibrary/originals/1/helmet.png"; sourceTree = "<group>"; };
++		C0D1979D2AF44B4D00CC09AE /* PurchaseDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseDoneView.swift; sourceTree = "<group>"; };
+ /* End PBXFileReference section */
+ 
+ /* Begin PBXFrameworksBuildPhase section */
+@@ -78,8 +96,11 @@
+ 		A23605962AE6572100E6204B /* view */ = {
+ 			isa = PBXGroup;
+ 			children = (
+-				A23605992AE66D8A00E6204B /* TiresView.swift */,
+-				A236059D2AE6759B00E6204B /* SwiftUIView.swift */,
++				C0D1979D2AF44B4D00CC09AE /* PurchaseDoneView.swift */,
++				C075373E2AF53FDB00F4C19E /* TypeView.swift */,
++				C07537402AF5415D00F4C19E /* ChoiceListView.swift */,
++				C07537422AF54CFD00F4C19E /* TiresView.swift */,
++				C07537442AF54F9100F4C19E /* ExtrasView.swift */,
+ 			);
+ 			path = view;
+ 			sourceTree = "<group>";
+@@ -107,9 +128,10 @@
+ 		A2C6024E2ADD3DF0006DCE67 /* vehicule */ = {
+ 			isa = PBXGroup;
+ 			children = (
++				C0D197882AF411EC00CC09AE /* Data */,
+ 				A2C6024F2ADD3DF0006DCE67 /* vehiculeApp.swift */,
+ 				A23605962AE6572100E6204B /* view */,
+-				A2C602512ADD3DF0006DCE67 /* ContentView.swift */,
++				C0D197952AF43A9A00CC09AE /* helmet.png */,
+ 				A2C602532ADD3DF1006DCE67 /* Assets.xcassets */,
+ 				A2C602552ADD3DF1006DCE67 /* Preview Content */,
+ 			);
+@@ -141,6 +163,19 @@
+ 			path = vehiculeUITests;
+ 			sourceTree = "<group>";
+ 		};
++		C0D197882AF411EC00CC09AE /* Data */ = {
++			isa = PBXGroup;
++			children = (
++				C0D197892AF413E300CC09AE /* Type.swift */,
++				C0D1978B2AF4155A00CC09AE /* Tires.swift */,
++				C0D1978D2AF4159F00CC09AE /* Extras.swift */,
++				C0D1978F2AF4170200CC09AE /* TypeRepository.swift */,
++				C075373A2AF53EDF00F4C19E /* TiresRepository.swift */,
++				C075373C2AF53F2E00F4C19E /* ExtrasRepository.swift */,
++			);
++			path = Data;
++			sourceTree = "<group>";
++		};
+ /* End PBXGroup section */
+ 
+ /* Begin PBXNativeTarget section */
+@@ -205,7 +240,7 @@
+ 			attributes = {
+ 				BuildIndependentTargetsInParallel = 1;
+ 				LastSwiftUpdateCheck = 1400;
+-				LastUpgradeCheck = 1400;
++				LastUpgradeCheck = 1500;
+ 				TargetAttributes = {
+ 					A2C6024B2ADD3DF0006DCE67 = {
+ 						CreatedOnToolsVersion = 14.0;
+@@ -246,6 +281,7 @@
+ 			buildActionMask = 2147483647;
+ 			files = (
+ 				A2C602572ADD3DF1006DCE67 /* Preview Assets.xcassets in Resources */,
++				C0D197962AF43A9A00CC09AE /* helmet.png in Resources */,
+ 				A2C602542ADD3DF1006DCE67 /* Assets.xcassets in Resources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+@@ -271,10 +307,18 @@
+ 			isa = PBXSourcesBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
+-				A2C602522ADD3DF0006DCE67 /* ContentView.swift in Sources */,
++				C0D1978A2AF413E300CC09AE /* Type.swift in Sources */,
++				C07537452AF54F9100F4C19E /* ExtrasView.swift in Sources */,
++				C07537432AF54CFD00F4C19E /* TiresView.swift in Sources */,
++				C0D1979E2AF44B4D00CC09AE /* PurchaseDoneView.swift in Sources */,
++				C0D1978C2AF4155B00CC09AE /* Tires.swift in Sources */,
++				C0D1978E2AF4159F00CC09AE /* Extras.swift in Sources */,
++				C075373F2AF53FDB00F4C19E /* TypeView.swift in Sources */,
++				C07537412AF5415D00F4C19E /* ChoiceListView.swift in Sources */,
++				C075373D2AF53F2E00F4C19E /* ExtrasRepository.swift in Sources */,
++				C0D197902AF4170200CC09AE /* TypeRepository.swift in Sources */,
+ 				A2C602502ADD3DF0006DCE67 /* vehiculeApp.swift in Sources */,
+-				A236059E2AE6759B00E6204B /* SwiftUIView.swift in Sources */,
+-				A236059A2AE66D8A00E6204B /* TiresView.swift in Sources */,
++				C075373B2AF53EDF00F4C19E /* TiresRepository.swift in Sources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+ 		};
+@@ -347,6 +391,7 @@
+ 				DEBUG_INFORMATION_FORMAT = dwarf;
+ 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+ 				ENABLE_TESTABILITY = YES;
++				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+ 				GCC_C_LANGUAGE_STANDARD = gnu11;
+ 				GCC_DYNAMIC_NO_PIC = NO;
+ 				GCC_NO_COMMON_BLOCKS = YES;
+@@ -407,6 +452,7 @@
+ 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ 				ENABLE_NS_ASSERTIONS = NO;
+ 				ENABLE_STRICT_OBJC_MSGSEND = YES;
++				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+ 				GCC_C_LANGUAGE_STANDARD = gnu11;
+ 				GCC_NO_COMMON_BLOCKS = YES;
+ 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+diff --git a/vehicule.xcodeproj/project.xcworkspace/xcuserdata/invite.xcuserdatad/UserInterfaceState.xcuserstate b/vehicule.xcodeproj/project.xcworkspace/xcuserdata/invite.xcuserdatad/UserInterfaceState.xcuserstate
+new file mode 100644
+index 0000000..a047602
+Binary files /dev/null and b/vehicule.xcodeproj/project.xcworkspace/xcuserdata/invite.xcuserdatad/UserInterfaceState.xcuserstate differ
+diff --git a/vehicule.xcodeproj/xcuserdata/invite.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist b/vehicule.xcodeproj/xcuserdata/invite.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+new file mode 100644
+index 0000000..05fd3a2
+--- /dev/null
++++ b/vehicule.xcodeproj/xcuserdata/invite.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+@@ -0,0 +1,163 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<Bucket
++   uuid = "5AD8455C-1D23-4940-BCBF-F5D6833AA654"
++   type = "1"
++   version = "2.0">
++   <Breakpoints>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            uuid = "02135966-EED6-4DC4-9D55-02E66C98406E"
++            shouldBeEnabled = "Yes"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "vehicule/ContentView.swift"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "17"
++            endingLineNumber = "17"
++            landmarkName = "unknown"
++            landmarkType = "0">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            uuid = "952D8D09-D211-4DF7-A511-74E3D61FF181"
++            shouldBeEnabled = "Yes"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "vehicule/ContentView.swift"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "18"
++            endingLineNumber = "18"
++            landmarkName = "unknown"
++            landmarkType = "0">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            uuid = "6BB18192-2106-46A1-92A2-89F17BDFEB20"
++            shouldBeEnabled = "Yes"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "vehicule/view/ExtrasView.swift"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "10"
++            endingLineNumber = "10"
++            landmarkName = "ExtrasView"
++            landmarkType = "14">
++            <Locations>
++               <Location
++                  uuid = "6BB18192-2106-46A1-92A2-89F17BDFEB20 - 2fdbf1f61081b5e1"
++                  shouldBeEnabled = "Yes"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "property wrapper backing initializer of vehicule.ExtrasView.isChecked : Swift.Bool"
++                  moduleName = "vehicule"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/invite/Documents/vehiculeManage/vehicule/view/ExtrasView.swift"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "0"
++                  endingLineNumber = "0"
++                  offsetFromSymbolStart = "20">
++               </Location>
++               <Location
++                  uuid = "6BB18192-2106-46A1-92A2-89F17BDFEB20 - 65b72b88668b0ad7"
++                  shouldBeEnabled = "Yes"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "vehicule.ExtrasView.isChecked.getter : Swift.Bool"
++                  moduleName = "vehicule"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/invite/Documents/vehiculeManage/vehicule/view/ExtrasView.swift"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "0"
++                  endingLineNumber = "0"
++                  offsetFromSymbolStart = "20">
++               </Location>
++               <Location
++                  uuid = "6BB18192-2106-46A1-92A2-89F17BDFEB20 - 7333c8486fce2446"
++                  shouldBeEnabled = "Yes"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "vehicule.ExtrasView.isChecked.setter : Swift.Bool"
++                  moduleName = "vehicule"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/invite/Documents/vehiculeManage/vehicule/view/ExtrasView.swift"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "11"
++                  endingLineNumber = "11"
++                  offsetFromSymbolStart = "0">
++               </Location>
++               <Location
++                  uuid = "6BB18192-2106-46A1-92A2-89F17BDFEB20 - 45f1d100ae12255"
++                  shouldBeEnabled = "Yes"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "vehicule.ExtrasView.isChecked.modify : Swift.Bool"
++                  moduleName = "vehicule"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/invite/Documents/vehiculeManage/vehicule/view/ExtrasView.swift"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "11"
++                  endingLineNumber = "11"
++                  offsetFromSymbolStart = "0">
++               </Location>
++               <Location
++                  uuid = "6BB18192-2106-46A1-92A2-89F17BDFEB20 - af32f1e1d897469"
++                  shouldBeEnabled = "Yes"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "vehicule.ExtrasView.isChecked.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
++                  moduleName = "vehicule"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/invite/Documents/vehiculeManage/%3Ccompiler-generated%3E"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "0"
++                  endingLineNumber = "0"
++                  offsetFromSymbolStart = "40">
++               </Location>
++               <Location
++                  uuid = "6BB18192-2106-46A1-92A2-89F17BDFEB20 - 8583181001bff4fb"
++                  shouldBeEnabled = "Yes"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "vehicule.ExtrasView.$isChecked.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
++                  moduleName = "vehicule"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/invite/Documents/vehiculeManage/vehicule/view/ExtrasView.swift"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "0"
++                  endingLineNumber = "0"
++                  offsetFromSymbolStart = "20">
++               </Location>
++               <Location
++                  uuid = "6BB18192-2106-46A1-92A2-89F17BDFEB20 - 6994538ddaeb0eaa"
++                  shouldBeEnabled = "Yes"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "default argument 0 of vehicule.ExtrasView.init(isChecked: Swift.Bool, extras: vehicule.Extras) -&gt; vehicule.ExtrasView"
++                  moduleName = "vehicule"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/invite/Documents/vehiculeManage/vehicule/view/ExtrasView.swift"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "0"
++                  endingLineNumber = "0"
++                  offsetFromSymbolStart = "4">
++               </Location>
++            </Locations>
++         </BreakpointContent>
++      </BreakpointProxy>
++   </Breakpoints>
++</Bucket>
+diff --git a/vehicule.xcodeproj/xcuserdata/invite.xcuserdatad/xcschemes/xcschememanagement.plist b/vehicule.xcodeproj/xcuserdata/invite.xcuserdatad/xcschemes/xcschememanagement.plist
+new file mode 100644
+index 0000000..4f81b6f
+--- /dev/null
++++ b/vehicule.xcodeproj/xcuserdata/invite.xcuserdatad/xcschemes/xcschememanagement.plist
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
++<plist version="1.0">
++<dict>
++	<key>SchemeUserState</key>
++	<dict>
++		<key>vehicule.xcscheme_^#shared#^_</key>
++		<dict>
++			<key>orderHint</key>
++			<integer>0</integer>
++		</dict>
++	</dict>
++</dict>
++</plist>
+diff --git a/vehicule/.DS_Store b/vehicule/.DS_Store
+new file mode 100644
+index 0000000..7a08108
+Binary files /dev/null and b/vehicule/.DS_Store differ
+diff --git a/vehicule/Assets.xcassets/Symbol.symbolset/Contents.json b/vehicule/Assets.xcassets/Symbol.symbolset/Contents.json
+new file mode 100644
+index 0000000..2f415ce
+--- /dev/null
++++ b/vehicule/Assets.xcassets/Symbol.symbolset/Contents.json
+@@ -0,0 +1,11 @@
++{
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  },
++  "symbols" : [
++    {
++      "idiom" : "universal"
++    }
++  ]
++}
+diff --git a/vehicule/Assets.xcassets/helmet.imageset/Contents.json b/vehicule/Assets.xcassets/helmet.imageset/Contents.json
+new file mode 100644
+index 0000000..84e9cf3
+--- /dev/null
++++ b/vehicule/Assets.xcassets/helmet.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "filename" : "helmet.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/vehicule/Assets.xcassets/helmet.imageset/helmet.png b/vehicule/Assets.xcassets/helmet.imageset/helmet.png
+new file mode 100644
+index 0000000..624fba1
+Binary files /dev/null and b/vehicule/Assets.xcassets/helmet.imageset/helmet.png differ
+diff --git a/vehicule/ContentView.swift b/vehicule/ContentView.swift
+deleted file mode 100644
+index a0024f2..0000000
+--- a/vehicule/ContentView.swift
++++ /dev/null
+@@ -1,51 +0,0 @@
+-//
+-//  ContentView.swift
+-//  vehicule
+-//
+-//  Created by hafid yassine on 16/10/2023.
+-
+-import SwiftUI
+-struct ContentView: View {
+-    
+-    @State var selectedOption: Int = 1
+-    
+-    var body: some View {
+-        Text("Tune your vehicule").font(.headline)
+-        Text("Type")
+-            .frame(maxWidth: .infinity, alignment: .leading)
+-        VStack (alignment: .leading, spacing: 20) {
+-            RadioButtonView(index: 1, title: "car", selectedIndex: $selectedOption , price: "0 credits")
+-            RadioButtonView(index: 2, title: "Motorbike", selectedIndex: $selectedOption, price: "0 credits")
+-            RadioButtonView(index: 3, title: "Hovercraft", selectedIndex: $selectedOption, price: "50 credits")
+-        }
+-        .frame(maxWidth: .infinity, alignment: .leading)
+-        .padding()
+-    }
+-}
+-struct RadioButtonView: View {
+-    var index: Int
+-    var title: String
+-    @Binding var selectedIndex: Int
+-    var price: String
+-    var body: some View {
+-        Button(action: {
+-            selectedIndex = index
+-        }) {
+-            HStack {
+-                Image(systemName: self.selectedIndex == self.index ? "largecircle.fill.circle" : "circle")
+-                    .foregroundColor(.black)
+-                Text(title)
+-                    .frame(maxWidth: .infinity, alignment: .leading)
+-                Text(price)
+-                    .font(.system(size: 12))
+-                    .foregroundStyle(.black)
+-                
+-            }
+-        }
+-    }
+-}
+-struct ContentView_Previews: PreviewProvider {
+-    static var previews: some View {
+-        ContentView()
+-    }
+-}
+diff --git a/vehicule/Data/Extras.swift b/vehicule/Data/Extras.swift
+new file mode 100644
+index 0000000..cc66a0d
+--- /dev/null
++++ b/vehicule/Data/Extras.swift
+@@ -0,0 +1,16 @@
++//
++//  Extras.swift
++//  vehicule
++//
++//  Created by invite on 02/11/2023.
++//
++
++import Foundation
++struct Extras: Identifiable {
++    let id = UUID()
++    var name: String
++    var credits: Int
++    var Id : Int
++    var ischecked : Bool
++}
++
+diff --git a/vehicule/Data/ExtrasRepository.swift b/vehicule/Data/ExtrasRepository.swift
+new file mode 100644
+index 0000000..ca2192c
+--- /dev/null
++++ b/vehicule/Data/ExtrasRepository.swift
+@@ -0,0 +1,21 @@
++//
++//  ExtrasRepository.swift
++//  vehicule
++//
++//  Created by invite on 03/11/2023.
++//
++
++import Foundation
++
++class ExtrasRepository {
++    
++    static let shared = ExtrasRepository()
++    
++    private(set) var extras = [
++    Extras(name: "Nitro(10 units)", credits: 100, Id: 0,ischecked: false),
++    Extras(name: "Soiler", credits: 200, Id: 1,ischecked: false)
++        ]
++    
++   
++    
++}
+diff --git a/vehicule/Data/Tires.swift b/vehicule/Data/Tires.swift
+new file mode 100644
+index 0000000..e2a4f2e
+--- /dev/null
++++ b/vehicule/Data/Tires.swift
+@@ -0,0 +1,15 @@
++//
++//  Tires.swift
++//  vehicule
++//
++//  Created by invite on 02/11/2023.
++//
++
++import Foundation
++struct Tires: Identifiable {
++    let id = UUID()
++    var name: String
++    var credits: Int
++    var Id: Int
++}
++
+diff --git a/vehicule/Data/TiresRepository.swift b/vehicule/Data/TiresRepository.swift
+new file mode 100644
+index 0000000..fb46191
+--- /dev/null
++++ b/vehicule/Data/TiresRepository.swift
+@@ -0,0 +1,18 @@
++//
++//  TiresRepository.swift
++//  vehicule
++//
++//  Created by invite on 03/11/2023.
++//
++
++import Foundation
++
++class TiresRepository {
++    
++    static let shared = TiresRepository()
++    
++    private(set) var tires = [
++        Tires(name: "Hard tires", credits: 0 , Id: 0),
++        Tires(name: "Soft tires", credits: 30, Id : 1)
++        ]
++}
+diff --git a/vehicule/Data/Type.swift b/vehicule/Data/Type.swift
+new file mode 100644
+index 0000000..e9131e4
+--- /dev/null
++++ b/vehicule/Data/Type.swift
+@@ -0,0 +1,15 @@
++//
++//  Type.swift
++//  vehicule
++//
++//  Created by invite on 02/11/2023.
++//
++
++import Foundation
++
++struct Type : Identifiable{
++    let id = UUID()
++    var name: String
++    var credits: Int
++    var Id : Int
++}
+diff --git a/vehicule/Data/TypeRepository.swift b/vehicule/Data/TypeRepository.swift
+new file mode 100644
+index 0000000..3e9e0e0
+--- /dev/null
++++ b/vehicule/Data/TypeRepository.swift
+@@ -0,0 +1,21 @@
++//
++//  ChoiceRepository.swift
++//  vehicule
++//
++//  Created by invite on 02/11/2023.
++//
++
++import Foundation
++class TypeRepository {
++    
++    static let shared = TypeRepository()
++    
++    private(set) var types = [
++        Type(name: "car", credits: 0,Id : 1),
++    Type(name: "Motorbike", credits: 0,  Id : 2),
++    Type(name: "Hovercraft", credits: 50,Id : 3)
++        ]
++
++    
++    
++}
+diff --git a/vehicule/vehiculeApp.swift b/vehicule/vehiculeApp.swift
+index 48ac2c9..fd9163d 100644
+--- a/vehicule/vehiculeApp.swift
++++ b/vehicule/vehiculeApp.swift
+@@ -11,10 +11,10 @@ import SwiftUI
+ struct vehiculeApp: App {
+     var body: some Scene {
+         WindowGroup {
+-            ContentView()
+-            TiresView()
+-         //   SwiftUIView()
+-            //ExtrasView()
++            NavigationStack {
++                ChoiceListView()
++                //PurchaseDoneView()
++            }
+         }
+     }
+ }
+diff --git a/vehicule/view/.DS_Store b/vehicule/view/.DS_Store
+new file mode 100644
+index 0000000..80e7848
+Binary files /dev/null and b/vehicule/view/.DS_Store differ
+diff --git a/vehicule/view/ChoiceListView.swift b/vehicule/view/ChoiceListView.swift
+new file mode 100644
+index 0000000..474b66c
+--- /dev/null
++++ b/vehicule/view/ChoiceListView.swift
+@@ -0,0 +1,83 @@
++//
++//  TypeListView.swift
++//  }
++//
++//  Created by invite on 03/11/2023.
++//
++
++import SwiftUI
++
++struct ChoiceListView: View {
++    let repository = TypeRepository.shared
++    let repository1 = TiresRepository.shared
++    let repository2 = ExtrasRepository.shared
++    
++    @State var selectedchoice : Int = 0
++    
++    let types : [Type]
++    let tiress : [Tires]
++    let extrass : [Extras]
++    
++
++    @State var selectedtype: Type = Type(name: "", credits: 0, Id: 0)
++    @State var selectedtire : Tires = Tires(name: "", credits: 0, Id: 0)
++    //@State var selectedextra : Extras = Extras(name: "", credits: 0, Id: 0, ischecked: false)
++    init() {
++        self.types = repository.types
++        self.tiress = repository1.tires
++        self.extrass = repository2.extras
++    }
++    
++    
++    var body: some View {
++            HStack {
++                Text("Tune your vehicule")
++                
++                
++            }
++            
++            
++            
++            List(types) {
++                type in TypeView(selectedOption: $selectedtype, type: type)
++            }
++            
++            List(tiress) {
++                tires in TiresView(selectedOption: $selectedtire, tires: tires)
++            }
++            
++            List(extrass) {
++                extras in ExtrasView(extras: extras)
++                
++            }
++            
++            
++            HStack {
++                Text("Total")
++                    .lineLimit(1)
++                    .truncationMode(.tail)
++                    .frame(maxWidth: .infinity,
++                           alignment: .leading)
++                
++                    
++                Text("\(selectedtire.credits + selectedtype.credits) credits")
++                Text("\(selectedchoice) credits")
++                Text("215 credits available")
++                
++                
++            }
++        
++        NavigationView{
++            HStack{
++                    NavigationLink(destination: PurchaseDoneView()){
++                        Text("Purchase").frame(width: 150,
++                                               height: 50, alignment: .center).background(Color.purple)
++                            .cornerRadius(50)
++                    }
++                
++            }
++        }
++        }
++    
++        
++    }
+diff --git a/vehicule/view/ExtrasView.swift b/vehicule/view/ExtrasView.swift
+new file mode 100644
+index 0000000..59f3b30
+--- /dev/null
++++ b/vehicule/view/ExtrasView.swift
+@@ -0,0 +1,47 @@
++//
++//  ExtrasView.swift
++//  vehicule
++//
++//  Created by invite on 03/11/2023.
++//
++import SwiftUI
++
++struct ExtrasView: View {
++    
++    var extras : Extras
++    @State var isChecked: Bool = false
++    //@Binding var isChecked: Bool
++    
++    
++    var body: some View {
++      
++        HStack(spacing: 16) {
++            CheckboxView(isChecked: $isChecked)
++            
++                Text(extras.name)
++                    .lineLimit(1)
++                    .truncationMode(.tail)
++                    .frame(maxWidth: .infinity,
++                           alignment: .leading)
++                        
++            
++            Text("\(extras.credits) credits")
++            
++        }
++    }
++}
++
++struct CheckboxView: View {
++    @Binding var isChecked: Bool
++    
++    var body: some View {
++        Button(action: {
++            isChecked.toggle()
++        }) {
++            Image(systemName: isChecked ? "checkmark.square.fill" : "square")
++                .resizable()
++                .frame(width: 20, height: 20)
++        }
++    }
++}
++
+diff --git a/vehicule/view/PurchaseDoneView.swift b/vehicule/view/PurchaseDoneView.swift
+new file mode 100644
+index 0000000..5b2e921
+--- /dev/null
++++ b/vehicule/view/PurchaseDoneView.swift
+@@ -0,0 +1,40 @@
++//
++//  PurchaseDoneView.swift
++//  vehicule
++//
++//  Created by invite on 02/11/2023.
++//
++
++import SwiftUI
++
++struct PurchaseDoneView: View {
++    var body: some View {
++        Text("Purchase done")
++        VStack {
++            Text("Total amount: 130 credits")
++                .lineLimit(1)
++                .truncationMode(.tail)
++                .frame(maxWidth: .infinity,
++                       alignment: .leading)
++            
++            
++            Button("Copy to clipboard") {
++                // on click
++            }
++            .buttonStyle(.bordered)
++            
++            Image(.helmet)
++                .resizable()
++                .aspectRatio(contentMode: .fit)
++                .cornerRadius(10)
++                .padding(8)
++            
++        }
++    }
++}
++
++struct PurchaseDoneView_Previews: PreviewProvider {
++    static var previews: some View {
++        PurchaseDoneView()
++    }
++}
+diff --git a/vehicule/view/SwiftUIView.swift b/vehicule/view/SwiftUIView.swift
+deleted file mode 100644
+index 3238eab..0000000
+--- a/vehicule/view/SwiftUIView.swift
++++ /dev/null
+@@ -1,25 +0,0 @@
+-//
+-//  SwiftUIView.swift
+-//  vehicule
+-//
+-//  Created by hafid yassine on 23/10/2023.
+-//
+-
+-import SwiftUI
+-
+-struct SwiftUIView: View {
+-    @State var isChecked:Bool = false
+-    var title:String
+-    func toggle(){isChecked = !isChecked}
+-    var body: some View {
+-        Button(action: toggle){
+-            HStack{
+-                Image(systemName: isChecked ? "checkmark.square": "square")
+-                Text(title)
+-            }
+-            
+-        }
+-    }
+-}
+-
+-
+diff --git a/vehicule/view/TiresView.swift b/vehicule/view/TiresView.swift
+index 748c521..97a17ad 100644
+--- a/vehicule/view/TiresView.swift
++++ b/vehicule/view/TiresView.swift
+@@ -2,53 +2,25 @@
+ //  TiresView.swift
+ //  vehicule
+ //
+-//  Created by hafid yassine on 23/10/2023.
++//  Created by invite on 03/11/2023.
+ //
+-
+ import SwiftUI
+ 
+ struct TiresView: View {
+-        @State var selectedOption: Int = 1
+-        
+-        var body: some View {
+-            Text("Tires")
+-                .frame(maxWidth: .infinity, alignment: .leading)
+-            VStack (alignment: .leading, spacing: 20) {
+-                RadioButtonView2(index: 1, title: "Hard tires", selectedIndex: $selectedOption , price: "0 credits")
+-                RadioButtonView2(index: 2, title: "Soft tires", selectedIndex: $selectedOption, price: "30 credits")
+-        
+-            }
+-            .frame(maxWidth: .infinity, alignment: .leading)
+-            .padding()
+-        }
+-    }
+-    struct RadioButtonView2: View {
+-        var index: Int
+-        var title: String
+-        @Binding var selectedIndex: Int
+-        var price: String
+-        var body: some View {
+-            Button(action: {
+-                selectedIndex = index
+-            }) {
+-                HStack {
+-                    Image(systemName: self.selectedIndex == self.index ? "largecircle.fill.circle" : "circle")
+-                        .foregroundColor(.black)
+-                    Text(title)
+-                        .frame(maxWidth: .infinity, alignment: .leading)
+-                    Text(price)
+-                        .font(.system(size: 12))
+-                        .foregroundStyle(.black)
+-                    
+-                }
+-            }
+-        }
+-    }
+     
+-
+-
+-struct TiresView_Previews: PreviewProvider {
+-    static var previews: some View {
+-        TiresView()
++    @Binding var selectedOption: Tires
++    var tires: Tires
++    var body: some View {
++      
++        HStack(spacing: 16) {
++            RadioButtonViewtires(index: tires, selectedIndex: $selectedOption )
++            Text(tires.name)
++                .lineLimit(1)
++                .truncationMode(.tail)
++                .frame(maxWidth: .infinity,
++                       alignment: .leading)
++            Text("\(tires.credits) credits")
++              
++        }
+     }
+ }
+diff --git a/vehicule/view/TypeView.swift b/vehicule/view/TypeView.swift
+new file mode 100644
+index 0000000..3b2af18
+--- /dev/null
++++ b/vehicule/view/TypeView.swift
+@@ -0,0 +1,62 @@
++//
++//  TypeView.swift
++//  vehicule
++//
++//  Created by invite on 03/11/2023.
++//
++
++import SwiftUI
++
++struct TypeView: View {
++    
++    @Binding var selectedOption: Type
++    var type: Type
++    var body: some View {
++        
++        
++      
++        HStack(spacing: 20) {
++            RadioButtonViewtype(index: type, selectedIndex: $selectedOption )
++            Text(type.name)
++                .lineLimit(1)
++                .truncationMode(.tail)
++                .frame(maxWidth: .infinity,
++                       alignment: .leading)
++            Text("\(type.credits) credits")
++            
++        }
++    }
++}
++
++struct RadioButtonViewtype: View {
++    
++    var index: Type
++    @Binding var selectedIndex : Type
++    var body: some View {
++        Button(action: {
++            selectedIndex = index
++        }) {
++            HStack {
++                Image(systemName: selectedIndex.Id == index.Id ? "largecircle.fill.circle" : "circle")
++                    
++            }
++        }
++    }
++}
++
++struct RadioButtonViewtires: View {
++    
++    var index: Tires
++    @Binding var selectedIndex : Tires
++    var body: some View {
++        Button(action: {
++            selectedIndex = index
++        }) {
++            HStack {
++                Image(systemName: selectedIndex.Id == index.Id ? "largecircle.fill.circle" : "circle")
++                    
++            }
++        }
++    }
++}
++

@@ -16,6 +16,16 @@
 		A2C602612ADD3DF1006DCE67 /* vehiculeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C602602ADD3DF1006DCE67 /* vehiculeTests.swift */; };
 		A2C6026B2ADD3DF1006DCE67 /* vehiculeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6026A2ADD3DF1006DCE67 /* vehiculeUITests.swift */; };
 		A2C6026D2ADD3DF1006DCE67 /* vehiculeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6026C2ADD3DF1006DCE67 /* vehiculeUITestsLaunchTests.swift */; };
+		C05621682AF80054003A1FB9 /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05621672AF80054003A1FB9 /* Extras.swift */; };
+		C06573752AF800D8002E7C57 /* ExtrasRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06573742AF800D8002E7C57 /* ExtrasRepository.swift */; };
+		C06573772AF800F9002E7C57 /* Tires.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06573762AF800F9002E7C57 /* Tires.swift */; };
+		C06573792AF8010E002E7C57 /* TiresRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06573782AF8010E002E7C57 /* TiresRepository.swift */; };
+		C065737B2AF8021D002E7C57 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065737A2AF8021D002E7C57 /* Type.swift */; };
+		C065737D2AF80241002E7C57 /* TypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065737C2AF80241002E7C57 /* TypeRepository.swift */; };
+		C065737F2AF8026B002E7C57 /* ChoiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065737E2AF8026B002E7C57 /* ChoiceListView.swift */; };
+		C06573812AF80295002E7C57 /* ExtrasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06573802AF80295002E7C57 /* ExtrasView.swift */; };
+		C06573832AF839D5002E7C57 /* PurchasedoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06573822AF839D5002E7C57 /* PurchasedoneView.swift */; };
+		C06573852AF83AB4002E7C57 /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06573842AF83AB4002E7C57 /* TypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,16 @@
 		A2C602662ADD3DF1006DCE67 /* vehiculeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vehiculeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C6026A2ADD3DF1006DCE67 /* vehiculeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vehiculeUITests.swift; sourceTree = "<group>"; };
 		A2C6026C2ADD3DF1006DCE67 /* vehiculeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vehiculeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C05621672AF80054003A1FB9 /* Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
+		C06573742AF800D8002E7C57 /* ExtrasRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasRepository.swift; sourceTree = "<group>"; };
+		C06573762AF800F9002E7C57 /* Tires.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tires.swift; sourceTree = "<group>"; };
+		C06573782AF8010E002E7C57 /* TiresRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiresRepository.swift; sourceTree = "<group>"; };
+		C065737A2AF8021D002E7C57 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		C065737C2AF80241002E7C57 /* TypeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRepository.swift; sourceTree = "<group>"; };
+		C065737E2AF8026B002E7C57 /* ChoiceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceListView.swift; sourceTree = "<group>"; };
+		C06573802AF80295002E7C57 /* ExtrasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasView.swift; sourceTree = "<group>"; };
+		C06573822AF839D5002E7C57 /* PurchasedoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedoneView.swift; sourceTree = "<group>"; };
+		C06573842AF83AB4002E7C57 /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +100,10 @@
 			children = (
 				A23605992AE66D8A00E6204B /* TiresView.swift */,
 				A236059D2AE6759B00E6204B /* SwiftUIView.swift */,
+				C065737E2AF8026B002E7C57 /* ChoiceListView.swift */,
+				C06573802AF80295002E7C57 /* ExtrasView.swift */,
+				C06573822AF839D5002E7C57 /* PurchasedoneView.swift */,
+				C06573842AF83AB4002E7C57 /* TypeView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -107,6 +131,7 @@
 		A2C6024E2ADD3DF0006DCE67 /* vehicule */ = {
 			isa = PBXGroup;
 			children = (
+				C05621662AF80017003A1FB9 /* Data */,
 				A2C6024F2ADD3DF0006DCE67 /* vehiculeApp.swift */,
 				A23605962AE6572100E6204B /* view */,
 				A2C602512ADD3DF0006DCE67 /* ContentView.swift */,
@@ -139,6 +164,19 @@
 				A2C6026C2ADD3DF1006DCE67 /* vehiculeUITestsLaunchTests.swift */,
 			);
 			path = vehiculeUITests;
+			sourceTree = "<group>";
+		};
+		C05621662AF80017003A1FB9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C05621672AF80054003A1FB9 /* Extras.swift */,
+				C06573742AF800D8002E7C57 /* ExtrasRepository.swift */,
+				C06573762AF800F9002E7C57 /* Tires.swift */,
+				C06573782AF8010E002E7C57 /* TiresRepository.swift */,
+				C065737A2AF8021D002E7C57 /* Type.swift */,
+				C065737C2AF80241002E7C57 /* TypeRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +309,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C065737F2AF8026B002E7C57 /* ChoiceListView.swift in Sources */,
 				A2C602522ADD3DF0006DCE67 /* ContentView.swift in Sources */,
 				A2C602502ADD3DF0006DCE67 /* vehiculeApp.swift in Sources */,
+				C06573772AF800F9002E7C57 /* Tires.swift in Sources */,
+				C065737D2AF80241002E7C57 /* TypeRepository.swift in Sources */,
+				C06573792AF8010E002E7C57 /* TiresRepository.swift in Sources */,
+				C06573752AF800D8002E7C57 /* ExtrasRepository.swift in Sources */,
+				C05621682AF80054003A1FB9 /* Extras.swift in Sources */,
+				C06573852AF83AB4002E7C57 /* TypeView.swift in Sources */,
 				A236059E2AE6759B00E6204B /* SwiftUIView.swift in Sources */,
+				C06573832AF839D5002E7C57 /* PurchasedoneView.swift in Sources */,
+				C06573812AF80295002E7C57 /* ExtrasView.swift in Sources */,
 				A236059A2AE66D8A00E6204B /* TiresView.swift in Sources */,
+				C065737B2AF8021D002E7C57 /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

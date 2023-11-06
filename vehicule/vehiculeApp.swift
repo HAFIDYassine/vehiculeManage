@@ -11,10 +11,10 @@ import SwiftUI
 struct vehiculeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-            TiresView()
-         //   SwiftUIView()
-            //ExtrasView()
+            NavigationStack {
+                ChoiceListView()
+                //PurchaseDoneView()
+            }
         }
     }
 }
