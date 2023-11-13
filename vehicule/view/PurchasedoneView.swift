@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct PurchaseDoneView: View {
+    //@State var text: String = "Total amount: 130 credits - Purchased"
+    
     var body: some View {
         Text("Purchase done")
         VStack {
-            Text("Total amount: 130 credits")
+            Text("Total amount: 130 credits - Purchased")
                 .lineLimit(1)
                 .truncationMode(.tail)
                 .frame(maxWidth: .infinity,
@@ -19,11 +21,11 @@ struct PurchaseDoneView: View {
             
             
             Button("Copy to clipboard") {
-                // on click
+                copyTOClipboard()
             }
             .buttonStyle(.bordered)
             
-            Image(.helmet)
+            Image("Helmet")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(10)
@@ -31,6 +33,13 @@ struct PurchaseDoneView: View {
             
         }
     }
+}
+
+
+func copyTOClipboard(){
+    @State var text: String = "Total amount: 130 credits - Purchased"
+    UIPasteboard.general.string = text
+    
 }
 
 struct PurchaseDoneView_Previews: PreviewProvider {

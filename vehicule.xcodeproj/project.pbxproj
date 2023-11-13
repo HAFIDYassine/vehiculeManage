@@ -11,11 +11,11 @@
 		A236059E2AE6759B00E6204B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236059D2AE6759B00E6204B /* SwiftUIView.swift */; };
 		A2C602502ADD3DF0006DCE67 /* vehiculeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6024F2ADD3DF0006DCE67 /* vehiculeApp.swift */; };
 		A2C602522ADD3DF0006DCE67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C602512ADD3DF0006DCE67 /* ContentView.swift */; };
-		A2C602542ADD3DF1006DCE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C602532ADD3DF1006DCE67 /* Assets.xcassets */; };
 		A2C602572ADD3DF1006DCE67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C602562ADD3DF1006DCE67 /* Preview Assets.xcassets */; };
 		A2C602612ADD3DF1006DCE67 /* vehiculeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C602602ADD3DF1006DCE67 /* vehiculeTests.swift */; };
 		A2C6026B2ADD3DF1006DCE67 /* vehiculeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6026A2ADD3DF1006DCE67 /* vehiculeUITests.swift */; };
 		A2C6026D2ADD3DF1006DCE67 /* vehiculeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6026C2ADD3DF1006DCE67 /* vehiculeUITestsLaunchTests.swift */; };
+		A2E7DDC32AF8E37400CA4ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C602532ADD3DF1006DCE67 /* Assets.xcassets */; };
 		C05621682AF80054003A1FB9 /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05621672AF80054003A1FB9 /* Extras.swift */; };
 		C06573752AF800D8002E7C57 /* ExtrasRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06573742AF800D8002E7C57 /* ExtrasRepository.swift */; };
 		C06573772AF800F9002E7C57 /* Tires.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06573762AF800F9002E7C57 /* Tires.swift */; };
@@ -283,8 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E7DDC32AF8E37400CA4ACF /* Assets.xcassets in Resources */,
 				A2C602572ADD3DF1006DCE67 /* Preview Assets.xcassets in Resources */,
-				A2C602542ADD3DF1006DCE67 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +489,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,6 +519,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

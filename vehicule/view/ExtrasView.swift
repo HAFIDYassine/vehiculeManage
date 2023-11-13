@@ -10,7 +10,6 @@ struct ExtrasView: View {
     
     var extras : Extras
     @State var isChecked: Bool = false
-    //@Binding var isChecked: Bool
     
     
     var body: some View {
