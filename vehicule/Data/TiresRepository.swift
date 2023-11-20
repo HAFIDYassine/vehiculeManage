@@ -12,7 +12,7 @@ class TiresRepository {
     static let shared = TiresRepository()
     
     private(set) var tires = [
-        Tires(name: "Hard tires", credits: 0 , Id: 0),
-        Tires(name: "Soft tires", credits: 30, Id : 1)
+        Tires(name: "Hard tires", credits: 0 , Id: 1),
+        Tires(name: "Soft tires", credits: 30, Id : 2)
         ]
 }

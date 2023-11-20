@@ -11,6 +11,7 @@ struct Extras: Identifiable {
     var name: String
     var credits: Int
     var Id : Int
-    var ischecked : Bool
+    var nitrochecked : Bool
+    var spoilerchecked : Bool
 }
 
